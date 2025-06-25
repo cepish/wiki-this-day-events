@@ -10,6 +10,7 @@ This project implements a simple React application that fetches and displays his
 2.  [Tech Stack](#tech-stack)
 3.  [Installation](#installation)
 4.  [Usage](#usage)
+5.  [Code Quality & Pre-commit Hooks](#code-quality--pre-commit-hooks)
 
 ---
 
@@ -57,3 +58,12 @@ To run the application in development mode:
 ```bash
 npm run dev
 ```
+
+## 5. Code Quality & Pre-commit Hooks
+
+This project utilizes [Husky](https://typicode.github.io/husky/) to enforce code quality standards before commits are made. A `pre-commit` Git hook is configured to run the following checks:
+
+- **ESLint (`npm run lint`):** Ensures code follows linting rules, catching potential syntax errors, stylistic issues, etc.
+- **Tests (`npm run test`):** Executes all unit and integration tests using Jest and React Testing Library.
+
+If any linting errors or test failures are detected, the commit will be aborted. This helps maintain a clean, stable, and reliable codebase.
