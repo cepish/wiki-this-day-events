@@ -1,5 +1,4 @@
-import type { JsonApiError } from "../types/errors";
-import { ApiError, handleApiError } from "../utils/errorHandler";
+import { ApiError } from "../utils/errorHandler";
 
 /**
  * An extra layer to carry out async requests.
